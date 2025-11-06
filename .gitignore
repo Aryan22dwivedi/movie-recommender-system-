@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+myenv/
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+
+# Pickle and large datasets
+*.pkl
+*.pickle
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Streamlit files
+.streamlit/
