@@ -20,11 +20,11 @@ movies_dict = pickle.load(open('movie_dict.pkl','rb'))
 movies = pd.DataFrame(movies_dict)
 similarity = pickle.load(open('similarity.pkl','rb'))
 
-st.title('Movie Rcedomender System by Aryan')
+st.title('Movie Recommender System by Aryan Dwivedi')
 
 selected_movie_name = st.selectbox('what woud you like to search', movies['title'].values)
 
-if st.button('recommend'):
+if st.button('Recommend'):
     recommendations= recommend(selected_movie_name)
     for i in recommendations:
       st.write(i)
