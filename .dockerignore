@@ -1,0 +1,57 @@
+# Optimized .dockerignore for the mrs project
+# Ignore local environment, IDE, build artifacts and secrets but keep source and Docker files.
+
+# OS / Editor
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+env/
+.venv/
+venv/
+pip-wheel-metadata/
+
+# Build / distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Logs, runtime files, local secrets
+*.log
+*.sqlite3
+*.db
+*.env
+secrets.*
+*.pem
+*.key
+
+# Node / tooling
+node_modules/
+
+# Ignore local Docker Compose override files but keep main compose if needed
+docker-compose.override.yml
+docker-compose.*.yml
+
+# Keep project source, Dockerfiles, CSVs and requirements (do NOT ignore these)
+# (explicitly list names to avoid accidental matches)
+!Dockerfile
+!mrs.Dockerfile
+!run.Dockerfile
+!docker-compose.yml
+!compose.yaml
+!app.py
+!mrs.py
+!requirements*.txt
+!tmdb_5000_movies.csv
+!tmdb_5000_credits.csv
+
+# Misc
+README.md
+LICENSE
