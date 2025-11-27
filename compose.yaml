@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  mrs:
+    build:
+      context: .
+      dockerfile: mrs.Dockerfile
+    volumes:
+      - mrs-data:/app
+    networks:
+      - mrs-network
+    restart: "no"
+    healthcheck:
+      test: ["CMD", "test", "-f", "/app/movie_dict.pkl"]
+      interval: 5s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+
+  app:
+    build:
+      context: .
+      dockerfile: run.Dockerfile
+    depends_on:
+      mrs:
+        condition: service_healthy
+    ports:
+      - "8501:8501"
+    volumes:
+      - mrs-data:/app
+    networks:
+      - mrs-network
+    restart: unless-stopped
+
+volumes:
+  mrs-data:
+    driver: local
+
+networks:
+  mrs-network:
+    driver: bridge

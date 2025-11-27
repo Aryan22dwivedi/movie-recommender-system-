@@ -24,6 +24,3 @@ Quick start (Windows, virtualenv):
 
 Notes:
 - This repo includes pickled model artifacts (`*.pkl`). If you prefer not to store them in Git, remove them before committing the remote or add them to `.gitignore`.
-- To create a GitHub repo and push, see the section below or use the `gh` CLI.
-
-License: Unlicensed — add a LICENSE file if you want an open-source license.

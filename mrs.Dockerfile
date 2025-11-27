@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 FROM python:3.10-slim
+=======
+FROM python:3.10
+
+>>>>>>> fd74184109a3b04e80973a22a58d45c165a94567
 WORKDIR /app
 
 COPY requirements-preprocessor.txt .

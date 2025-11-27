@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 pandas>=1.5.0
 numpy>=1.24.0
 scikit-learn>=1.2.0
+=======
+pandas>=1.5.0
+numpy>=1.24.0
+scikit-learn>=1.2.0
+>>>>>>> fd74184109a3b04e80973a22a58d45c165a94567
 nltk>=3.8.1
