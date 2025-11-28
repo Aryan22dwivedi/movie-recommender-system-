@@ -21,6 +21,3 @@ Quick start (Windows, virtualenv):
 3. Run the app:
 
    - `streamlit run app.py`
-
-Notes:
-- This repo includes pickled model artifacts (`*.pkl`). If you prefer not to store them in Git, remove them before committing the remote or add them to `.gitignore`.
