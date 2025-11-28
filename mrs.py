@@ -196,5 +196,4 @@ print("\nSaving movie dictionary and similarity matrix to .pkl files...")
 pickle.dump(new_df.to_dict(), open('movie_dict.pkl', 'wb'))
 pickle.dump(similarity, open('similarity.pkl', 'wb'))
 
->>>>>>> fd74184109a3b04e80973a22a58d45c165a94567
 print("Script complete. 'movie_dict.pkl' and 'similarity.pkl' saved.")
